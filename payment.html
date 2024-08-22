@@ -585,6 +585,16 @@
 			}
 		}
 
+		@media (max-width: 768px) {
+		    .container {
+		        flex-direction: column; /* Adjust layout for smaller screens */
+		    }
+		    .element {
+		        font-size: 1rem; /* Adjust font sizes for readability */
+		    }
+		}
+
+
 		@media only screen and (max-width:999px) {
 			.using-mobile-browser #nectar_fullscreen_rows:not(.afterLoaded):not([data-mobile-disable="on"])>div {
 				height: calc(100vh - 76px);
@@ -634,7 +644,9 @@
 			}
 			#parenter{
 				/* background-color: greenyellow; */
-				padding-left: 35px;
+				padding-left: 65px;
+				align-items: center;
+				justify-content: center ;
 			}
 		}
 
@@ -644,6 +656,7 @@
 			}
 			#welcome-show{
 				display: block !important;
+				border: #0693e3;
 			}
 		}
 		@media screen and (width<691px) {
@@ -781,7 +794,7 @@
 	<div class="ocm-effect-wrap">
 		<div style="background-color: #783a8c;padding: 3px; display: flex; justify-content: center; color: white; font-size: 14px;"><img height="28" src="images/pihead.png" alt="home"></div>
 		<div id="welcome-show" style="position: absolute; width: 100%; top: 220px; display: none; z-index: 300;">
-		    <h2 style="color: #edb703; text-align: center; margin-bottom: 60px !important;">
+		    <h2 style="color: #edb703; text-align: center; margin: 20px !important;">
 				Welcome to the Pi browser
 			</h2>
 	    </div>
@@ -806,7 +819,7 @@
 				<div class="container-wrap">
 					<div class="container main-content">
 						<div class="row">
-
+								
 							<div id="parenter" data-elementor-type="wp-page" data-elementor-id="7561"
 								class="elementor elementor-7561">
 								<div class="elementor-element elementor-element-5f45766 e-con-full e-flex e-con"
@@ -820,10 +833,18 @@
 												.elementor-widget-image {
 													text-align: center
 												}
+												
+												.elementor-7561 {
+												    display: flex;
+												    align-items: center;
+												    justify-content: center;
+												    flex-direction: column; /* Stack items vertically */
+												}
 
 												.elementor-widget-image a {
 													display: inline-block;
 													align-content: center;
+													justify-content: center;
 												}
 
 												.elementor-widget-image a img[src$=".svg"] {
