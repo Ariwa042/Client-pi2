@@ -1,0 +1,113 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /*min-height: 100vh;*/
+    max-width: 100%;
+}
+
+/* Header Styles */
+.header-container {
+    width:100%;/* Ensure the container spans the full width of the screen */
+    background-color: #6E3AA7; /* Purple background */
+    padding: 5px; /* Padding to give some space inside the header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    height: 28px; /* Set the height of the header */
+
+}
+
+
+.logo img {
+    height: 25px;
+}
+
+/* Main Content */
+main {
+    margin-top: 20px;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    max-width: 230px;
+    max-height: 230px;
+}
+
+h1 {
+    font-size: 26px;
+    color: #FFB400;
+    margin-bottom: 30px;
+}
+
+/* App Icon Container */
+.app-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.app-icon {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-icon img {
+    width: 62px;
+    height: 62px;
+    border-radius: 10px;
+    border: 1px solid #000; /* Black stroke around the icons */
+}
+
+.app-icon span {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Explore Button */
+.explore-btn {
+    margin-top: 82px;
+    margin-bottom: 10px;
+}
+
+.explore-btn a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #6E3AA7;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.explore-btn a:hover {
+    background-color: #5A2A8B;
+}
+
+
